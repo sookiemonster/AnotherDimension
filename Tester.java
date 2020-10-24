@@ -7,8 +7,10 @@ public class Tester {
 
     System.out.println(ArrayOps.largest(arr));
 
-    int[][] matrix = new int[][] {{10, 20}, {30, 24, 100, -100, 0}, {-2}};
+    int[][] matrix = new int[][] {{10, 20}, {30, 24, 100, -100, 0}, {-2}, {-1000, -24, -36}};
 
     System.out.println(Arrays.toString(ArrayOps.sumRows(matrix)));
+
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(matrix)));
   }
 }

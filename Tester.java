@@ -26,5 +26,11 @@ public class Tester {
     System.out.println( ArrayOps.sum(B));
 
     System.out.println( Arrays.toString(ArrayOps.sumCols(A)));
+
+    int[][] C = { {  1,  2, 3, 4 },
+                  {  2, 3,  4,  1 },
+                   { 3, 4,  1, 2 } };
+    System.out.println( ArrayOps.isRowMagic(A));
+    System.out.println( ArrayOps.isRowMagic(C));
   }
 }

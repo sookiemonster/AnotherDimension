@@ -53,10 +53,17 @@ public class Tester {
     System.out.println();
 
     System.out.println("Both Magic");
-    int [][] E = { {  2, 2, 2 },
+    int[][] E = { {  2, 2, 2 },
                    {  2, 2, 2 } };
 
     System.out.println( ArrayOps.isColMagic(E));
     System.out.println( ArrayOps.isRowMagic(E));
+    System.out.println();
+
+    int[][] F = { {  2, 4, 2 },
+                 {  2, 2, 2 } };
+
+    System.out.println( ArrayOps.isLocationMagic(F, 0, 1));
+    System.out.println( ArrayOps.isLocationMagic(F, 1, 1));
   }
 }
